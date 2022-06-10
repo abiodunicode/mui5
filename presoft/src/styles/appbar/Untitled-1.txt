@@ -1,0 +1,13 @@
+<BannerContent>
+        <Typography variant="h6">
+            Tech Collection
+        </Typography>
+        <BannerTitle variant="h2">
+        Secure and Strategic IT
+        </BannerTitle>
+        <BannerDescription variant="subtitle">
+        Logically provides information technology services and active security management for growing companies.
+        We manage technology complexity – from IT services and infrastructure management to special projects.
+        </BannerDescription >
+       
+          </BannerContent>
