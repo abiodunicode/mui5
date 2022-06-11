@@ -14,7 +14,10 @@ export default function AppbarMobile({matches}) {
 
         <AppbarContainer
         style={{
+            marginTop:0,
             backgroundColor:Colors.backcolor,
+            zIndex:'99',
+            
         }}>
            
             <AppbarHeader  variant="h4">

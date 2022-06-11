@@ -15,10 +15,6 @@ export default function Banner () {
    
   return (
       <BannerContainer 
-      style={{ 
-        backgroundImage: `url(${'/images/banner/banner2.png'})`,
-   
-      }}
       >
           {/* <BannerImage src="/images/banner/banner2.png">
           

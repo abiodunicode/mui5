@@ -5,6 +5,8 @@ import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Products from "./components/products";
 import Promotions from "./components/Promotions/Promotions";
+import Services from "./components/services";
+import Services2 from "./components/services2";
 import theme from "./styles/theme";
 
 function App() {
@@ -29,7 +31,9 @@ function App() {
       <Appbar/>
       <Banner/>
       <Promotions/>
-      <Products/>
+      <Services/>
+      <Services2/>
+      {/* <Products/> */}
       </Box>
  
     {/* </Container> */}

@@ -19,11 +19,14 @@ export const BannerContainer= styled(Box)(({theme})=>({
    backgroundRepeat: 'no-repeat',
    width: '100vw',
    height: '100vh',
+   backgroundImage: `url(${'/images/banner/banner2.png'})`,
     // backgroundImage:"url("+{Image}+")",
    //backgroundColor : Colors.light_gray,
        [theme.breakpoints.down("sm")]:{
          flexDirection: 'column',
-         alignItems : 'center'
+         alignItems : 'center',
+         width: '100vw',
+         height: '85vh',
        }
 
 })) ;
@@ -45,7 +48,7 @@ export const BannerContent= styled(Box)(({theme})=>({
          justifyContent: 'center',
          maxWidth: '420',
          padding:'30px',
-         paddingTop:'300px',  
+         paddingTop:'125px',  
         
     }
 
@@ -54,13 +57,14 @@ export const BannerContent= styled(Box)(({theme})=>({
 export const BannerTitle = styled(Typography)(({theme})=>({
    lineHeight: '1.5',
    letterSpacing: '2px',
-    fontSize:'60px',
+    fontSize:'50px',
     fontWeight:'500',
    // paddingLeft : '50px',
     color : Colors.white,
     marginBottom:'20px',
        [theme.breakpoints.down("sm")]:{
-        fontSize:'42px',
+        fontSize:'37px',
+        textAlign:'center'
         
     }
 
@@ -74,8 +78,8 @@ export const BannerDescription = styled(Typography)(({theme})=>({
     fontWeight:'400',
    // paddingRight : '100px',
     color : Colors.white,
-    fontSize:'35px',
-    wordBreak: 'keep-all',
+    fontSize:'25px',
+   textAlign:'center',
    // width: '50vw',
  
      marginBottom:'3em',
@@ -86,7 +90,17 @@ export const BannerDescription = styled(Typography)(({theme})=>({
             fontSize:'20px',
 
          
-     }
+     },
+
+     [theme.breakpoints.down("sm")]:{
+      lineHeight: '1.25',
+      letterSpacing: '1.15',
+      marginBottom:'1.5em',
+      fontSize:'15px',
+      textAlign:'center',
+
+   
+}
  
      
  })) ;
@@ -100,8 +114,8 @@ export const BannerDescription = styled(Typography)(({theme})=>({
    
       },
       [theme.breakpoints.down("sm")]:{
-         width: '320px',
-         height:'300px'
+        //  width: '320px',
+        //  height:'300px'
  
    }
  
@@ -119,14 +133,14 @@ export const BannerDescription = styled(Typography)(({theme})=>({
 
   export const Buttonbox = styled(Button)(({theme})=>({
     borderRadius:'50px',
-    fontSize:'20px',
+    fontSize:'15px',
     fontWeight:'600',
-    padding :'30px',
+    padding :'25px',
     fontFamily:'Poppins',
-    width:"35%",
+    width:"300px",
     letterSpacing: '4px',
     [theme.breakpoints.down("sm")]:{
-        fontSize:'20px',
+        fontSize:'10px',
         fontWeight:'600',
         width:"100%",
         padding :'15px',

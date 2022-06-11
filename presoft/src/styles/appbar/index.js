@@ -6,15 +6,7 @@ import "@fontsource/montez"
 import "@fontsource/questrial"; 
 
 
- export const useStyles = styled((theme) => ({
 
-  appBarTransparent: {
-      backgroundColor: 'rgba(67, 129, 168,0.5)'
-  },
-  appBarSolid: {
-      backgroundColor: 'rgba(67, 129, 168)'
- }
-}));
 
 //container
 export const  AppbarContainer = styled(Box)(()=>({
@@ -33,8 +25,9 @@ export const  AppbarContainer = styled(Box)(()=>({
 //header
 export const  AppbarHeader = styled(Typography)(({theme})=>({
     padding : "5px",
+   // marginTop:0,
     flexGrow : 1,
-    fontSize : '4em',
+    fontSize : '3em',
     fontFamily :'"Montez", "cursive"',
   paddingLeft:'170px',
     fontWeight:'600',
@@ -77,4 +70,5 @@ export const  MyList = styled(List)(({type})=>({
 
      export const  ActionIconsContainerDesktop = styled(Box)(()=>({
         flexGrow : 0,
+       // marginTop:'-231px',
       }));

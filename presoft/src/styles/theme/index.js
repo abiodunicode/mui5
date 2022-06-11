@@ -14,6 +14,10 @@ export const Colors= {
     border: "#DODFE1",
     inverse: "#2F3D4A",
     shaft: "#333",
+    whitesmoke: "#F5F5F5",
+    circle1:'linear-gradient(329.04deg, rgb(238, 94, 70) 34.42%, rgb(250, 178, 86) 99.58%)',
+    circle12:'rgba(255,0,0,0.3)',
+
     //////////
     ///GRAY///
     ///////////
