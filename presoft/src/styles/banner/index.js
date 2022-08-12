@@ -138,6 +138,7 @@ export const BannerDescription = styled(Typography)(({theme})=>({
     padding :'25px',
     fontFamily:'Poppins',
     width:"300px",
+    marginLeft:'-380px',
     letterSpacing: '4px',
     [theme.breakpoints.down("sm")]:{
         fontSize:'10px',

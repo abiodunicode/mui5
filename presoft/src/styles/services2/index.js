@@ -12,6 +12,7 @@ export const ServiceContainer = styled(Box)(({theme})=>({
         //justifyContent:'center',
         padding :'50px',
         backgroundColor:Colors.white,
+        margin:0,
 
         [theme.breakpoints.down("sm")]:{
           width:'100%',
@@ -50,11 +51,11 @@ export const ServiceContent2 = styled(Box)(({theme})=>({
     alignItems:'center',
     marginLeft:'auto',
     marginRight:'auto',
-    width:'850px',
+    width:'100%',
 
     [theme.breakpoints.down("sm")]:{
-    marginLeft:'-200px',
-    marginTop:'-450px',
+    // marginLeft:'-200px',
+    // marginTop:'-450px',
   
   }
 
@@ -134,7 +135,7 @@ export const ServiceDescription = styled(Typography)(({theme})=>({
       
   })) ;
 
-  export const  ServiceImageContainer = styled(Box)(()=>({
+  export const  ServiceImageContainer = styled(Box)(({theme})=>({
     borderRadius:'50%',
     //backgroundColor:Colors.circle1,
     backgroundImage: 'linear-gradient(329.04deg, rgb(238, 94, 70) 34.42%, rgb(250, 178, 86) 99.58%)',
@@ -143,6 +144,12 @@ export const ServiceDescription = styled(Typography)(({theme})=>({
     display:'flex',
    
     alignItems:'center',
+
+    [theme.breakpoints.down("sm")]:{
+      width:'300px',
+    height:'300px',
+
+   },
 
     
     
@@ -157,14 +164,16 @@ export const ServiceDescription = styled(Typography)(({theme})=>({
     padding:'60px',
   
          [theme.breakpoints.down("md")]:{
-          //  width: '350px'
+         // width:' 150px',
    
       },
       [theme.breakpoints.down("sm")]:{
         width:' 84px',
-    padding:'60px',
+    padding:'120px',
  
    }
+
+   
  
       
   })) ;
@@ -172,6 +181,12 @@ export const ServiceDescription = styled(Typography)(({theme})=>({
   export const Dividing = styled( Divider)(({theme})=>({
     height:"300px",
     marginTop:'100px',
+
+    [theme.breakpoints.down("sm")]:{
+     display:'none'
+
+
+ }
   
   })) ;
 

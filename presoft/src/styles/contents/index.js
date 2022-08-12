@@ -10,50 +10,69 @@ export const ServiceContainer = styled(Box)(({theme})=>({
         display: 'flex',
         flexDirection:'column',
         //justifyContent:'center',
-        padding :'50px',
+        paddingTop :'30px',
         backgroundColor:Colors.whitesmoke,
 
         [theme.breakpoints.down("sm")]:{
           width:'100%',
           margin:0,
           padding :0,
-        
+          paddingTop :'15px',
       
       }
 
 }));
 
+
+
+
+
 export const ServiceContent = styled(Box)(({theme})=>({
     display: 'flex',
     flexDirection:'column',
     justifyContent:'center',
-    padding :'50px',
+    //padding :'50px',
     alignItems:'center',
     marginLeft:'auto',
     marginRight:'auto',
-    width:'850px',
+    width:'95%',
 
     [theme.breakpoints.down("sm")]:{
-      width:'100%',
-      marginLeft:'-50px',
+      width:'95%',
+    
     
   }
-
-   
-
 }));
+
+export const BannerImage = styled('img', Typography)(({src,theme})=>({
+  src : `url(${src})`,
+  height:' 500px',
+  width:' 631px',
+
+       [theme.breakpoints.down("md")]:{
+          width: '350px'
+ 
+    },
+    [theme.breakpoints.down("sm")]:{
+      //  width: '320px',
+      //  height:'300px'
+
+ }}));
+
 
 export const ServiceContent2 = styled(Box)(({theme})=>({
     display: 'flex',
-    flexDirection:'column',
+    flexDirection:'row',
     justifyContent:'center',
   //  padding :'50px',
     alignItems:'center',
     marginLeft:'auto',
     marginRight:'auto',
-    width:'850px',
+    width:'95%',
+    padding:'10px',
 
     [theme.breakpoints.down("sm")]:{
+      flexDirection:'column',
       width:'100%',
       //marginLeft:'-10px',
       paddingBottom:'70px'
@@ -66,19 +85,26 @@ export const ServiceContent2 = styled(Box)(({theme})=>({
 }));
 
 export const ServiceTitle = styled(Typography)(({theme})=>({
+  display:'flex',
+  justifyContent:'center',
    lineHeight:'1',
    letterSpacing:'2px',
   // fontSize:'30px',
    fontWeight:'400',
-   color:Colors.black,
+   color:Colors.backcolor,
    fontFamily :'Poppins', 
    lineHeight:'64px',
    letterSpacing:'0.03em',
   // marginBottom:'16px',
+  width:'850px',
+  marginBottom:'20px',
 
   [theme.breakpoints.down("sm")]:{
     fontSize:'30px',
-    fontWeight:'700',
+    fontWeight:'400',
+    width:'100%',
+    textAlign:'center',
+     
 
 }
 }));

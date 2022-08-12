@@ -66,6 +66,7 @@ export default function Services2(){
         >
 
         </Dividing>
+
         <ServiceContent2>
         <ServiceTitle variant="h5">
             2.
@@ -82,10 +83,8 @@ export default function Services2(){
            </ServiceImage>
             </ServiceImageContainer>
        
-         
-            
-        
         </ServiceContent2>
+        
         <Dividing
         orientation="vertical" flexItem
         >

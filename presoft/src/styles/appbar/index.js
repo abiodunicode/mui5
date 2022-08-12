@@ -55,6 +55,62 @@ export const  MyList = styled(List)(({type})=>({
    
     }));
 
+    export const  MyList2 = styled(List)(()=>({
+      display : 'row',
+      flexGrow : 1,
+      justifyContent : 'center',
+      alignItems : 'center',
+      backgroundColor:Colors.backcolor,
+      color: Colors.white,
+      padding:'20px',
+      opacity: '0.9',
+      borderRadius:'15px',
+      fontFamily :'Questrial',
+      fontSize:'180px',
+     
+      }));
+
+      export const  ItemBox = styled(Box)(()=>({
+        display : "flex",
+        flexDirection:'row',
+       // background: Colors.shaft,
+       // position:"fixed",
+        bottom: 0,
+        left: 0,
+        width:'100%',
+        alignItem: 'center',
+        zIndex: 99,
+        borderTop: `1px solid ${Colors.border}`
+      }));
+
+      export const  ItemContent = styled(Box)(()=>({
+        display : "flex",
+        flexDirection:'column',
+        margin:'40px',
+       // width:'300px',
+        textAlign:'left',
+        //padding:'50px',
+        paddingTop:'20px',
+        paddingBottom:'20px',
+
+       
+      }));
+
+      export const  ItemTitle = styled(Typography)(()=>({
+      fontSize:'20px',
+      color:Colors.backcolor,
+      fontWeight:'500',
+      fontFamily: "Questrial",
+       
+      }));
+
+      export const  ItemLinks = styled(Typography)(()=>({
+        display : "flex",
+       
+      }));
+
+
+
 
     export const  ActionIconsContainerMobile = styled(Box)(()=>({
        display : "flex",

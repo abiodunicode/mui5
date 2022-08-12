@@ -1,9 +1,12 @@
-import {  IconButton, ListItemButton, ListItemIcon, ListItemText, makeStyles } from "@mui/material";
+import {  Button, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, makeStyles, Typography, useColorScheme } from "@mui/material";
 import Actions from "./actions";
-import { AppbarContainer, AppbarHeader, MyList, useStyles } from "../../styles/appbar";
+import { AppbarContainer, AppbarHeader, ItemBox, ItemContent, ItemLinks, ItemTitle, MyList, MyList2, useStyles } from "../../styles/appbar";
 import React, { useEffect, useState } from "react";
 import { Colors } from "../../styles/theme";
 import zIndex from "@mui/material/styles/zIndex";
+import Popover from '@mui/material/Popover';
+import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
+import { Link } from "react-router-dom";
 
 
 
@@ -42,39 +45,110 @@ export default function AppbarDesktop({matches}) {
           paddingBottom: navSize,
         }}
         ></p>
-            <MyList type ="row"
+              <MyList type ="row">
+              <Link 
+        style={{
+          fontSize:'22px',
+          color:Colors.white,
+          margin:0,
+
+        }}
+        to="/contact">Test</Link>
+
+<Link 
+        style={{
+          fontSize:'22px',
+          color:Colors.white,
+          margin:0,
+
+        }}
+        to="/contact">Test</Link>
+
+              <ListItemText
+
+>
+<PopupState variant="popover" popupId="demo-popup-popover">
+      {(popupState) => (
+        <div>
+          <Button
+          style={{
+            color:Colors.white,
+            fontSize:'22px',
+            textTransform:'capitalize',
+          }}
+          
+          variant="" {...bindTrigger(popupState)}>
+           Solutions
+          </Button>
+          <Popover
+          style={{
+            marginTop:'25px'
+          }}
+            {...bindPopover(popupState)}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'center',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'center',
+            }}
+          >
+           <ItemBox>
+             <ItemContent>
+               <ItemTitle variant="h6">Services</ItemTitle>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+             </ItemContent>
+
+             <ItemContent>
+               <ItemTitle variant="h6">Technology</ItemTitle>
+               <ItemLinks> <p>Manage IT Services</p></ItemLinks>
+               <ItemLinks> <p>Audit Services</p></ItemLinks>
+               <ItemLinks> <p>Manage IT Services</p></ItemLinks>
+               <ItemLinks> <p>Audit Services</p></ItemLinks>
             
-            >
-             
-            <ListItemText
-            primaryTypographyProps={{fontSize: '22px'}} 
-            primary="Home"/>
-            <ListItemText
-            primaryTypographyProps={{fontSize: '22px'}} 
-            primary="Categories"/>
-            <ListItemText 
-            primaryTypographyProps={{fontSize: '22px'}} 
-            primary="Products"/>
-            <ListItemText 
-            primaryTypographyProps={{fontSize: '22px'}} 
-            
-            primary="Contact Us"/>
-            {/* <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                //onClick={handleMenu}
-                color="inherit"
-              >
-                <SearchIcon />
-              </IconButton> */}
-             
+             </ItemContent>
+
+             <ItemContent>
+               <ItemTitle variant="h6">Industries</ItemTitle>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+             </ItemContent>
+
+             <ItemContent>
+               <ItemTitle variant="h6">Industries</ItemTitle>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+               <ItemLinks> <p>Manage IT</p></ItemLinks>
+             </ItemContent>
+           </ItemBox>
+          </Popover>
+        </div>
+      )}
+    </PopupState>
+             </ListItemText>
+         
             </MyList>
-            <Actions matches={matches}/>
+           <Actions matches={matches}/>
           
     </AppbarContainer>
     );
   
   
 }
+
+
+ 
+           

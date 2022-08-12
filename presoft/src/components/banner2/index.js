@@ -4,7 +4,7 @@ import { createTheme, makeStyles, useTheme } from "@mui/material/styles";
 import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerTitle, Buttonbox } from "../../styles/banner";
 
 
-export default function Banner () {
+export default function Banner (props) {
 
   
 
@@ -16,7 +16,9 @@ export default function Banner () {
   return (
       <BannerContainer 
       style={{
-        width:'100%'
+        width:'100%',
+        height:'450px',
+        backgroundImage: `url(${'/images/banner/b2.jpg'})`,
       }}
       >
           {/* <BannerImage src="/images/banner/banner2.png">
@@ -27,21 +29,9 @@ export default function Banner () {
             Tech Collection
         </Typography> */}
         <BannerTitle variant="h2">
-        Secure and Strategic IT
+        {props.title}
         </BannerTitle>
-        <BannerDescription variant="subtitle">
-            Logically provides information technology services and <br></br>active security management  for growing companies.
-            <p>We manage technology complexity – from IT services <br></br> and infrastructure  management to special projects.</p>
-           <Buttonbox
-            variant="contained" 
-            href="#contained-buttons"
-           >
-           Browse Solutions 
-           </Buttonbox>
-
-           
-            
-        </BannerDescription >
+        
 
         
 
